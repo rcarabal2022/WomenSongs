@@ -13,13 +13,16 @@ body {
 header { 
     display: flex;
     justify-content: space-between;
-    flex-direction: row;   
+    flex-direction: row; 
+    margin-top: 2%;
+    margin-left: 20%; 
+     margin-bottom: 5%;;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 55%;
 }
     
 .nav_link {
@@ -33,8 +36,21 @@ header {
     box-sizing: border-box;  
 }
 
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30%;
+}
+
 .drumkit {
-   position: relative; 
+   position: relative;
+   margin-bottom: 4%; 
 }
 
 .key {
@@ -53,7 +69,10 @@ p {
 
 h2 {
     color: whitesmoke;
+}
 
+h1 {
+    color: whitesmoke;
 }
 
 .pricing-btn {
@@ -64,6 +83,10 @@ h2 {
     width: 252px;
     height: 80px;
     border-radius: 50px;
+}
+
+.hit {
+    background-color: #13F482;
 }
 
 .footer-container {
