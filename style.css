@@ -8,37 +8,10 @@ body {
 
 
 .key {
-   
     width: 8rem;
     height: 8rem;
     border: 1px solid black;
-    background-color: black;
+    background-color: pink;
     border-radius: 50%;
     color: whitesmoke;
-}
-p {
-    color:#6F6A6A;
-    
-}
-
-h2 {
-    color: whitesmoke;
-
-}
-
-.pricing-btn {
-
-    color: 201f28;
-    font-size: larger;
-    font-weight: bold;
-    background-color: whitesmoke;
-    width: 252px;
-    height: 80px;
-    border-radius: 50px;
-
-}
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
