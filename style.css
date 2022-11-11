@@ -12,6 +12,7 @@ body {
 
 header { 
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row; 
     margin-top: 2%;
@@ -19,10 +20,20 @@ header {
     margin-bottom: 5%;;
 }
 
+h1 {
+    inline-size: 299px;
+    overflow-wrap: break-word;
+}
+
+input {
+    visibility: hidden;
+}
+
 .nav {
     display: flex;
     align-items: center;
     width: 55%;
+    margin-left: 40%;
 }
     
 .nav_link {
@@ -36,6 +47,12 @@ header {
     box-sizing: border-box;  
 }
 
+.nav_link:hover {
+    color: #13F482;
+} 
+
+
+
 .main-container {
     display: flex;
     justify-content: space-evenly;
@@ -46,7 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 16%;
+    margin-left: 7%;
 }
 
 .drumkit {
@@ -88,7 +105,7 @@ h1 {
     margin-bottom: 5%;
 }
 
-.hit {
+.pricing-btn:hover {
     background-color: #13F482;
     color: whitesmoke;
 }
@@ -99,4 +116,102 @@ h1 {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 75%;
+        height: 75%;
+        
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pricing-btn {
+        width: 152px;
+        height:50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .respmenu:hover {
+        color: #13F482; 
+    }
+
+    .logo {
+        width: 50%;
+        height: 50%;
+    }    
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        visibility: visible;
+      }
+
+      .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 30px;
+        pointer-events: none;
+      }
+      
+      .respmenu input[type="checkbox"] {
+        opacity: 0;
+      }
+      
+      .respmenu {
+        color: white;
+        position: relative;
+        background: #123456;
+        min-height: 48px;
+      }
+      
+      .respmenu nav {
+        display: none;
+      }
+      
+      .respmenu input:checked ~ nav {
+        display: block;
+      }
+      
+      .respmenu input:checked ~ .fa-bars {
+        display: none;
+      }
+      
+      .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+      }
+ }
+  
