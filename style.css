@@ -1,0 +1,66 @@
+body {
+    background-color: #010020;  
+    }
+
+.drumkit {
+   position: relative; 
+}
+
+
+.key {
+   
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+
+
+.texto-izquierdo{
+    margin-left: 10%;
+    margin-top: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+      }
+
+.text1, .text1-1
+{
+color: white;
+font-size: 70px;
+
+}
+
+.text2
+{
+    color: #4D4A69;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.botonVerde {
+    margin-left: 30px;    
+    font-size: 15px;
+        width: 150px;
+    height:50px;
+    border: 1px solid #00F482;
+    padding: 0px; 
+    background-color: #00F482;
+    border-radius: 30px; 
+
+}
+
+a{
+    color: #7DFDE5;
+}
