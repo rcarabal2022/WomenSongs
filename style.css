@@ -1,66 +1,217 @@
-body {
-    background-color: #010020;  
-    }
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@200;400;500;700 & display=swap');
 
-.drumkit {
-   position: relative; 
+* {
+    padding: 0;
+    margin: 0;   
 }
 
+body {
+    background-color: #010020; 
+    font-family: 'Inter', sans-serif;
+}
+
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    margin-top: 2%;
+    margin-left: 20%; 
+    margin-bottom: 5%;;
+}
+
+h1 {
+    inline-size: 299px;
+    overflow-wrap: break-word;
+}
+
+input {
+    visibility: hidden;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-left: 40%;
+}
+    
+.nav_link {
+    width: 200px;
+    margin-right: 50px;
+     color: white;
+    font-weight: 200px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;  
+}
+
+.nav_link:hover {
+    color: #13F482;
+} 
+
+
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.drumkit {
+   position: relative;
+   margin-bottom: 4%; 
+}
 
 .key {
-   
     width: 8rem;
     height: 8rem;
     border: 1px solid black;
-    background-color: black;
+    background-color: pink;
     border-radius: 50%;
     color: whitesmoke;
 }
 
+p {
+    color:#6F6A6A;
+    margin: 20px;
+}
 
-.texto-izquierdo{
-    margin-left: 10%;
-    margin-top: 20%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style: none;
+h2 {
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 4rem;
+}
+
+.pricing-btn {
+    color: #201f28;
+    font-size: larger;
+    font-weight: bold;
+    background-color: whitesmoke;
+    width: 252px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 5%;
+}
+
+.pricing-btn:hover {
+    background-color: #13F482;
+    color: whitesmoke;
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
-    font-style: bold;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 75%;
+        height: 75%;
+        
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pricing-btn {
+        width: 152px;
+        height:50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .respmenu:hover {
+        color: #13F482; 
+    }
+
+    .logo {
+        width: 50%;
+        height: 50%;
+    }    
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        visibility: visible;
       }
 
-.text1, .text1-1
-{
-color: white;
-font-size: 70px;
-
-}
-
-.text2
-{
-    color: #4D4A69;
-    margin-top: 5mm;
-    margin-bottom: 5mm;
-}
-
-
-ul{
-    list-style: none;
-}
-
-.botonVerde {
-    margin-left: 30px;    
-    font-size: 15px;
-        width: 150px;
-    height:50px;
-    border: 1px solid #00F482;
-    padding: 0px; 
-    background-color: #00F482;
-    border-radius: 30px; 
-
-}
-
-a{
-    color: #7DFDE5;
-}
+      .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 30px;
+        pointer-events: none;
+      }
+      
+      .respmenu input[type="checkbox"] {
+        opacity: 0;
+      }
+      
+      .respmenu {
+        color: white;
+        position: relative;
+        background: #123456;
+        min-height: 48px;
+      }
+      
+      .respmenu nav {
+        display: none;
+      }
+      
+      .respmenu input:checked ~ nav {
+        display: block;
+      }
+      
+      .respmenu input:checked ~ .fa-bars {
+        display: none;
+      }
+      
+      .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+      }
+ }
+  
