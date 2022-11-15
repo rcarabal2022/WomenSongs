@@ -23,6 +23,17 @@ header {
 h1 {
     inline-size: 299px;
     overflow-wrap: break-word;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+p {
+    color:#6F6A6A;
+    margin: 20px;
+}
+
+h2 {
+    color: whitesmoke;
 }
 
 input {
@@ -88,18 +99,18 @@ input {
     margin-top: 5.8vh;
 }
 
-p {
-    color:#6F6A6A;
-    margin: 20px;
-}
-
-h2 {
-    color: whitesmoke;
-}
-
-h1 {
-    color: whitesmoke;
-    font-size: 4rem;
+.big-pad {
+    width: 25.6vh;
+    height: 25.6vh;
+    background-color: #131313;
+    color: #414141;
+    font-size: 2.5em;
+    line-height: 25vh;
+    text-align: center;
+    border: 2px solid #414141;
+    border-radius: 50%;
+    margin: 10vh;
+    visibility: hidden;
 }
 
 .pricing-btn {
@@ -224,6 +235,10 @@ h1 {
       
       .respmenu input:not(:checked) ~ .fa-times {
         display: none;
+      }
+
+      .big-pad {
+          visibility: visible;
       }
  }
   
