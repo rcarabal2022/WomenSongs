@@ -52,12 +52,10 @@ input {
     color: #13F482;
 } 
 
-
-
 .main-container {
     display: flex;
     justify-content: space-evenly;
-    
+    position: relative;
 }
 
 .container {
@@ -68,11 +66,20 @@ input {
 }
 
 .drumkit {
-   position: relative;
    margin-bottom: 4%; 
 }
 
-.key {
+/* .key {
+    
+    width: 8rem;
+    height: 8rem;
+    border: 0.063rem solid black;
+    background-color: pink;
+    border-radius: 50%;
+    color: whitesmoke;
+   
+} */
+.key1 {
     width: 8rem;
     height: 8rem;
     border: 0.063rem solid black;
@@ -80,7 +87,51 @@ input {
     border-radius: 50%;
     color: whitesmoke;
 }
+.key2 {
+    
+    width: 6rem;
+    height: 6rem;
+    border: 0.063rem solid black;
+    background-color: pink;
+    border-radius: 50%;
+    color: whitesmoke;
+}
 
+
+ #keyA {
+    margin-left: -97vh;
+    margin-top: 30vh;
+} 
+
+#keyS {
+    margin-left: -15vh;
+    margin-top: 30vh;
+}
+
+#keyD {
+    margin-left: -18vh;
+    margin-top: 10vh;
+}
+#keyF {
+    margin-left: -10vh;
+    margin-top: 12vh;
+}
+#keyG {
+    margin-left: -20vh;
+    margin-top: 30vh;
+}
+#keyH {
+    margin-left: -30vh;
+    margin-top: -6vh;
+}
+#keyJ {
+    margin-left: -17vh;
+    margin-top: 17vh;
+}
+#keyK {
+    margin-left: -20vh;
+    margin-top: 3.8vh;
+}
 p {
     color:#6F6A6A;
     margin: 1.25rem;
@@ -136,8 +187,7 @@ h1 {
 
     .main-container {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
 
     .img-container {
@@ -169,7 +219,12 @@ h1 {
     .logo {
         width: 50%;
         height: 50%;
-    }    
+    } 
+    
+    main {
+        position: relative;
+        z-index: 1;
+    }
 
     .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
         position: absolute;
