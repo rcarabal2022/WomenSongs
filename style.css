@@ -158,22 +158,6 @@ h2 {
     color: whitesmoke;
 }
 
-
-
-.big-pad {
-    width: 25.6vh;
-    height: 25.6vh;
-    background-color: #131313;
-    color: #414141;
-    font-size: 2.5em;
-    line-height: 25vh;
-    text-align: center;
-    border: 2px solid #414141;
-    border-radius: 50%;
-    margin: 10vh;
-    visibility: hidden;
-}
-
 .pricing-btn {
     color: #201f28;
     font-size: larger;
@@ -228,6 +212,10 @@ h2 {
         height:3.125rem;
     }
     
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     h1 {
         font-size: 3.125rem;
@@ -300,7 +288,16 @@ h2 {
       }
 
       .big-pad {
-          visibility: visible;
-      }
+        width: 25.6vh;
+        height: 25.6vh;
+        background-color: #131313;
+        color: #414141;
+        font-size: 2.5em;
+        line-height: 25vh;
+        text-align: center;
+        border: 2px solid #414141;
+        border-radius: 50%;
+        margin: 10vh;
+    }
  }
   
