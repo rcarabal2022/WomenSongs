@@ -2,11 +2,11 @@
 
 * {
     padding: 0;
-    margin: 0;   
+    margin: 
 }
 
 body {
-    background-color: #010020; 
+    background-color: #010020;
     font-family: 'Inter', sans-serif;
 }
 
@@ -16,8 +16,8 @@ header {
     justify-content: space-between;
     flex-direction: row; 
     margin-top: 2%;
-    margin-left: 20%; 
-    margin-bottom: 5%;;
+    margin-left: 17%; 
+    margin-bottom: 5%;
 }
 
 h1 {
@@ -32,26 +32,25 @@ input {
 .nav {
     display: flex;
     align-items: center;
-    width: 55%;
-    margin-left: 40%;
+    width: 40%;
+    margin-left:0%;   
 }
-    
-.nav_link {
+
+    .nav_link {
     width: 200px;
     margin-right: 50px;
-     color: white;
+    color: white;
     font-weight: 200px;
     font-size: 20px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;  
+    padding-left: 40% ;
 }
 
 .nav_link:hover {
     color: #13F482;
 } 
-
-
 
 .main-container {
     display: flex;
@@ -64,11 +63,6 @@ input {
     flex-direction: column;
     align-items: center;
     margin-left: 7%;
-}
-
-.drumkit {
-   position: relative;
-   margin-bottom: 4%; 
 }
 
 .key {
@@ -103,6 +97,7 @@ h1 {
     height: 80px;
     border-radius: 50px;
     margin-bottom: 5%;
+    
 }
 
 .pricing-btn:hover {
@@ -121,53 +116,76 @@ h1 {
         display: flex;
         flex-direction: row;
     }
-
+    
     .nav {
         display: flex;
         flex-direction: column;
+        margin-right: 4.375rem;
+        position: fixed;
+        left: 0%;
+        top: 7.188rem;
+        width: 100%;
+        padding: 1.25rem, 0rem;   
     }
+
+    .nav_link {
+     font-size: 1rem;
+     margin: 0 ;
+     line-height: 5.625rem;
+     text-transform: uppercase;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     background:#010020 ;
+     transition: all 3s;
+      } 
 
     img {
         width: 75%;
-        height: 75%;
-        
+        height: 75%;    
     }
 
     .main-container {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 
     .img-container {
         display: flex;
         justify-content: center;
+
     }
 
     .pricing-btn {
-        width: 152px;
-        height:50px;
+        width: 9.5rem;
+        height: 3.125rem;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 2.5rem;
+        display: flex;
+        padding-left: 35%;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
+        padding: 3%;
+
     }
 
     p {
-        font-size: 10px;
+        font-size: 0.625rem;
+        padding-right: 3%;
     }
 
     .respmenu:hover {
         color: #13F482; 
     }
-
-    .logo {
+   .logo {
         width: 50%;
         height: 50%;
+        padding: 7%;
+        margin-left: 15%;
     }    
 
     .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
@@ -177,13 +195,13 @@ h1 {
         padding: 0;
         right: 0;
         top: 0;
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         visibility: visible;
       }
 
       .respmenu .fa-bars, .respmenu .fa-times {
-        font-size: 30px;
+        font-size: 1.875rem;
         pointer-events: none;
       }
       
@@ -192,10 +210,12 @@ h1 {
       }
       
       .respmenu {
+        display: flex;
         color: white;
         position: relative;
-        background: #123456;
-        min-height: 48px;
+        /*background: #123456;
+        min-height: 48px;*/
+        
       }
       
       .respmenu nav {
