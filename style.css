@@ -3,11 +3,10 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 body {
-    background-color: #010020; 
+    background-color: #010020;
     font-family: 'Inter', sans-serif;
 }
 
@@ -17,24 +16,15 @@ header {
     justify-content: space-between;
     flex-direction: row; 
     margin-top: 2%;
-    margin-left: 20%; 
-    margin-bottom: 5%;;
+    margin-left: 17%; 
+    margin-bottom: 5%;
 }
 
 h1 {
     inline-size: 18.688rem;
     overflow-wrap: break-word;
+    color: whitesmoke;
     font-size: 4rem;
-    color: whitesmoke;
-}
-
-p {
-    color:#6F6A6A;
-    margin: 20px;
-}
-
-h2 {
-    color: whitesmoke;
 }
 
 input {
@@ -45,9 +35,9 @@ input {
     display: flex;
     align-items: center;
     width: 55%;
-    margin-left: 40%;
+    margin-left: 15%;   
 }
-    
+
 .nav_link {
     width: 12.5rem;
     margin-right: 3.125rem;
@@ -66,7 +56,7 @@ input {
 .main-container {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
+    position: relative;    
 }
 
 .container {
@@ -76,43 +66,43 @@ input {
     margin-left: 7%;
 }
 
-/* .drumkit {
-   margin-bottom: 4%; 
-} */
-
 .key {
     position: absolute;
     width: 8%;
     height: 22%;
     border: 0px rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0); 
-    /* background-color: rgba(42, 209, 227, 0.76); */
+    /* background-color: rgba(42, 209, 227, 0.76); */ 
     border-radius: 50%;
-    color: rgba(0, 0, 0, 0);
-    /* color: rgba(226, 241, 7, 0.913);  */
-   
+    color: rgba(0, 0, 0, 0);  
 }
 
 #keyA {
+    position: absolute;
     margin-left: 74%;
     margin-top: 1.5%;
 }
 
 #keyS {
+    position: absolute;
     margin-left: 67%;
     margin-top: 9.2%;
 }
+
 #keyD {
+    position: absolute;
     margin-left: -6%;
     margin-top: 1.2%;
 }
 
 #keyF {
+    position: absolute;
     margin-left: 1%;
     margin-top: 10%;
 }
 
 #keyG {
+    position: absolute;
     width: 10%;
     height: 28%;
     margin-left: 59%;
@@ -120,6 +110,7 @@ input {
 }
 
 #keyH {
+    position: absolute;
     width: 10%;
     height: 28%;
     margin-left: 9.5%;
@@ -127,6 +118,7 @@ input {
 }
 
 #keyJ {
+    position: absolute;
     width: 10%;
     height: 28%;
     margin-left: 22%;
@@ -134,6 +126,7 @@ input {
 }
 
 #keyK {
+    position: absolute;
     width: 10%;
     height: 28%;
     margin-left:46%;
@@ -146,15 +139,6 @@ p {
 }
 
 h2 {
-    color: whitesmoke;
-}
-.key2 {
-    
-    width: 6rem;
-    height: 6rem;
-    border: 0.063rem solid black;
-    background-color: pink;
-    border-radius: 50%;
     color: whitesmoke;
 }
 
@@ -180,68 +164,87 @@ h2 {
     align-items: center;
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 768px) {
+
     header {
         display: flex;
         flex-direction: row;
     }
-
+    
     .nav {
         display: flex;
         flex-direction: column;
+        margin-right: 4.375rem;
+        position: fixed;
+        left: 0%;
+        top: 7.188rem;
+        width: 100%;
+        padding: 1.25rem, 0rem; 
+        z-index: 1;
     }
+
+    .nav_link {
+        font-size: 1rem;
+        margin: 0 ;
+        line-height: 5.625rem;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background:#010020 ;
+        opacity: 0.8;
+        transition: all 3s;
+    } 
 
     img {
         width: 75%;
-        height: 75%;
-        
+        height: 75%;    
     }
-    
+
     .main-container {
         display: flex;
-        flex-direction: column;   
+        flex-direction: column-reverse; 
     }
 
     .img-container {
         display: flex;
         justify-content: center;
+
     }
 
     .pricing-btn {
         width: 9.5rem;
-        height:3.125rem;
-    }
-    
-    .main-container {
-        display: flex;
-        flex-direction: column-reverse;
+        height: 3.125rem;
     }
 
     h1 {
-        font-size: 3.125rem;
+        font-size: 2.5rem;
+        display: flex;
+        padding-left: 35%;
     }
 
     h2 {
         font-size: 1.25rem;
+        padding: 3%;
+
     }
 
     p {
         font-size: 0.625rem;
+        padding-right: 3%;
     }
 
     .respmenu:hover {
         color: #13F482; 
     }
 
-    .logo {
+   .logo {
         width: 50%;
         height: 50%;
-    } 
-    
-    main {
-        position: relative;
-        z-index: 1;
-    }
+        padding: 7%;
+        margin-left: 15%;
+    }    
 
     .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
         position: absolute;
@@ -265,10 +268,9 @@ h2 {
       }
       
       .respmenu {
+        display: flex;
         color: white;
         position: relative;
-        background: #123456;
-        min-height: 3rem;
       }
       
       .respmenu nav {
@@ -297,7 +299,7 @@ h2 {
         text-align: center;
         border: 2px solid #414141;
         border-radius: 50%;
-        margin: 10vh;
+        margin: 3vh;
     }
  }
   
