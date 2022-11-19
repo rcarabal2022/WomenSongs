@@ -11,12 +11,14 @@ body {
 }
 
 header { 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
     align-items: center;
     justify-content: space-between;
     flex-direction: row; 
     margin-top: 2%;
-    margin-left: 17%; 
+    margin-left: 7%; 
     margin-bottom: 5%;
 }
 
@@ -35,7 +37,7 @@ input {
     display: flex;
     align-items: center;
     width: 55%;
-    margin-left: 15%;   
+    margin-left: 20%;   
 }
 
 .nav_link {
@@ -56,7 +58,7 @@ input {
 .main-container {
     display: flex;
     justify-content: space-evenly;
-    position: relative;    
+    position: relative;   
 }
 
 .container {
@@ -81,7 +83,7 @@ input {
 .key {
     position: absolute;
     border: 0px rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: whitesmoke; 
     border-radius: 50%;
 }
 
@@ -164,6 +166,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -178,10 +181,9 @@ h2 {
         flex-direction: column;
         margin-right: 4.375rem;
         position: fixed;
-        left: 0%;
+        left: 8%;
         top: 7.188rem;
-        width: 100%;
-        padding: 1.25rem, 0rem; 
+        margin-left: 10%;
         z-index: 1;
     }
 
