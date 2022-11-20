@@ -1,0 +1,22 @@
+.pricing-btn {
+    color: #201f28;
+    font-size: larger;
+    font-weight: bold;
+    background-color: whitesmoke;
+    width: 15.75rem;
+    height: 5rem;
+    border-radius: 3.125rem;
+    margin-bottom: 5%;
+}
+
+.pricing-btn:hover {
+    background-color: #13F482;
+    color: whitesmoke;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%;
+}
