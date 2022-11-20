@@ -1,0 +1,37 @@
+header { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    margin-top: 2%;
+    margin-left: 7%; 
+    margin-bottom: 5%;
+}
+
+input {
+    visibility: hidden;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-left: 20%;   
+}
+
+.nav_link {
+    width: 12.5rem;
+    margin-right: 3.125rem;
+     color: white;
+    font-weight: 12.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;  
+}
+
+.nav_link:hover {
+    color: #13F482;
+} 

@@ -1,0 +1,81 @@
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.sound-box{
+    position: relative;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.key {
+    position: absolute;
+    border: 0px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0); 
+    border-radius: 50%;
+}
+
+.key1 {
+    width: 16%;
+    height: 30%;
+} 
+
+.key2 {
+    width: 12%;
+    height: 22%;
+} 
+
+#keyA { 
+    margin-left: 74%;
+    margin-top: -49%;
+}
+
+#keyS {
+    margin-left: 68%;
+    margin-top: -37%;
+}
+
+#keyD {
+    margin-left: 19%;
+    margin-top: -37%;
+}
+
+#keyF {
+    margin-left: 14%;
+    margin-top: -49%;
+}
+
+#keyG {
+    margin-left: 60%;
+    margin-top: -24%;
+}
+
+#keyH {
+    margin-left: 24%;
+    margin-top: -24%;
+}
+
+#keyJ {
+    margin-left: 33%;
+    margin-top: -44%;
+}
+
+#keyK {
+    margin-left: 51%;
+    margin-top: -44%;
+}

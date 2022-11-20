@@ -1,3 +1,7 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@200;400;500;700 & display=swap');
 
 * {
@@ -10,129 +14,11 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-header { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row; 
-    margin-top: 2%;
-    margin-left: 17%; 
-    margin-bottom: 5%;
-}
-
 h1 {
     inline-size: 18.688rem;
     overflow-wrap: break-word;
     color: whitesmoke;
     font-size: 4rem;
-}
-
-input {
-    visibility: hidden;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    width: 55%;
-    margin-left: 15%;   
-}
-
-.nav_link {
-    width: 12.5rem;
-    margin-right: 3.125rem;
-     color: white;
-    font-weight: 12.5rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;  
-}
-
-.nav_link:hover {
-    color: #13F482;
-} 
-
-.main-container {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;    
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 7%;
-}
-
-.sound-box{
-    position: relative;
-    width: 100%;
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-
-.key {
-    position: absolute;
-    border: 0px rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0); 
-    border-radius: 50%;
-}
-
-.key1 {
-    width: 16%;
-    height: 30%;
-} 
-
-.key2 {
-    width: 12%;
-    height: 22%;
-} 
-
-#keyA { 
-    margin-left: 74%;
-    margin-top: -49%;
-}
-
-#keyS {
-    margin-left: 68%;
-    margin-top: -37%;
-}
-
-#keyD {
-    margin-left: 19%;
-    margin-top: -37%;
-}
-
-#keyF {
-    margin-left: 14%;
-    margin-top: -49%;
-}
-
-#keyG {
-    margin-left: 60%;
-    margin-top: -24%;
-}
-
-#keyH {
-    margin-left: 24%;
-    margin-top: -24%;
-}
-
-#keyJ {
-    margin-left: 33%;
-    margin-top: -44%;
-}
-
-#keyK {
-    margin-left: 51%;
-    margin-top: -44%;
 }
 
 p {
@@ -144,27 +30,6 @@ h2 {
     color: whitesmoke;
 }
 
-.pricing-btn {
-    color: #201f28;
-    font-size: larger;
-    font-weight: bold;
-    background-color: whitesmoke;
-    width: 15.75rem;
-    height: 5rem;
-    border-radius: 3.125rem;
-    margin-bottom: 5%;
-}
-
-.pricing-btn:hover {
-    background-color: #13F482;
-    color: whitesmoke;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -178,10 +43,9 @@ h2 {
         flex-direction: column;
         margin-right: 4.375rem;
         position: fixed;
-        left: 0%;
+        left: 8%;
         top: 7.188rem;
-        width: 100%;
-        padding: 1.25rem, 0rem; 
+        margin-left: 10%;
         z-index: 1;
     }
 
